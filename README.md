@@ -12,7 +12,7 @@ cout<<a+b;
 cout<<(double)(a+b);  
 也不对。  
 应该这样。  
-cout<<setiosflags(ios::fixed)<<setpresition(1)<<a+b;  
+cout<<setiosflags(ios::fixed)<<setprecision(1)<<a+b;  
 才行，而且这样子的话应该在最前面多一个声明：  
 #include<iomanip>  
 第二个是应该用getline(cin,变量名)解决。但是getline(cin,变量名)会单独读进去一个回车键，所以应该有两个。  
